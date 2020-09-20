@@ -14,21 +14,25 @@ const UserScreen = () => {
         title={'User Statistics'}
         iconName={'bar-chart'}
         color={'#C24CF6'}
+        iconType={'FontAwesome'}
       />
       <UserCategory
         title={'User Rewards'}
         iconName={'trophy'}
         color={'#FF1493'}
+        iconType={'FontAwesome'}
       />
       <UserCategory
         title={'App Settings'}
         iconName={'cogs'}
         color={'#FC6E22'}
+        iconType={'FontAwesome'}
       />
       <UserCategory
         title={'App Behavior'}
-        iconName={'fas fa-robot'}
+        iconName={'robot'}
         color={'#09FBD3'}
+        iconType={'FontAwesome5'}
       />
     </ScrollView>
   );

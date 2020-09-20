@@ -1,14 +1,26 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
-import { FontAwesome } from '@expo/vector-icons';
+import { FontAwesome, FontAwesome5 } from '@expo/vector-icons';
 
 const UserCategory = (props) => {
-  return (
+
+  if(props.iconType === 'FontAwesome'){
+    return (
+      <View style={styles.main}>
+          <FontAwesome style={styles.icon} name={props.iconName} size={70} color={props.color} />
+        <Text style={styles.h1}>{props.title}</Text>
+      </View>
+    );
+  } else {
+    return(
     <View style={styles.main}>
-      <FontAwesome style={styles.icon} name={props.iconName} size={70} color={props.color} />
-      <Text style={styles.h1}>{props.title}</Text>
-    </View>
-  );
+          <FontAwesome5 style={styles.icon} name={props.iconName} size={70} color={props.color} />
+        <Text style={styles.h1}>{props.title}</Text>
+      </View>
+    );
+  }
+
+  
 };
 
 const styles = StyleSheet.create({

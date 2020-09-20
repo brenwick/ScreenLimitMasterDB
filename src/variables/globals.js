@@ -15,6 +15,6 @@ global.colorIcon = '#d3d3d3'
 
 
 // FONTS
-global.headingFont = 'Verdana-Bold'
-global.subheadingFont = 'Verdana'
+global.headingFont = 'sans-serif'
+global.subheadingFont = 'sans-serif'
 
