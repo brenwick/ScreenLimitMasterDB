@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet} from 'react-native';
+import { View, Text, StyleSheet, ScrollView} from 'react-native';
 import StyleTextInput from '../components/StyleTextInput';
 import SettingsButton from '../components/SettingsButton';
 import { FontAwesome } from '@expo/vector-icons';

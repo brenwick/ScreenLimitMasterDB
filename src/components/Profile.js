@@ -7,8 +7,7 @@ import '../variables/globals';
 
 const Profile = (props) => {
   return (
-    <View>
-      <Text style={styles.heading}> Profile <FontAwesome name='user' size={50} color={colorWhite_1} /></Text>
+    
     <View style={styles.main}>
       <Image
         style={styles.image}
@@ -22,7 +21,6 @@ const Profile = (props) => {
         <Feather name='mail' size={30} color={colorIcon} />
         <SimpleLineIcons name='logout' size={30} color={colorIcon} />
       </View>
-    </View>
     </View>
   );
 };

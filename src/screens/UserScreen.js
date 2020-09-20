@@ -1,8 +1,8 @@
 import React from 'react';
 import { StyleSheet, ScrollView } from 'react-native';
+import { color } from 'react-native-reanimated';
 import Profile from '../components/Profile';
 import UserCategory from '../components/UserCategory';
-
 
 
 const UserScreen = () => {
@@ -11,16 +11,24 @@ const UserScreen = () => {
     <ScrollView style={styles.main}>
       <Profile fname='Brandon' lname='Renwick' />
       <UserCategory
-        src={require('../../assets/stats.png')}
         title={'User Statistics'}
+        iconName={'bar-chart'}
+        color={'#C24CF6'}
       />
       <UserCategory
-        src={require('../../assets/new_trophy.jpg')}
         title={'User Rewards'}
+        iconName={'trophy'}
+        color={'#FF1493'}
       />
       <UserCategory
-        src={require('../../assets/settings.png')}
         title={'App Settings'}
+        iconName={'cogs'}
+        color={'#FC6E22'}
+      />
+      <UserCategory
+        title={'App Behavior'}
+        iconName={'fas fa-robot'}
+        color={'#09FBD3'}
       />
     </ScrollView>
   );

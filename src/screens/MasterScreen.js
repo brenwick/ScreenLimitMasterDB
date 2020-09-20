@@ -20,7 +20,7 @@ const MasterScreen = ({ navigation }) => {
       />
       
       <StyleButton
-        text='TODO: Trial Screen'
+        text='Trial Screen'
         onPress={() => navigation.navigate('Trial')}
       />
       </View>

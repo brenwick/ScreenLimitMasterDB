@@ -1,10 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
+import { FontAwesome } from '@expo/vector-icons';
 
 const UserCategory = (props) => {
   return (
     <View style={styles.main}>
-      <Image style={styles.image} source={props.src} />
+      <FontAwesome style={styles.icon} name={props.iconName} size={70} color={props.color} />
       <Text style={styles.h1}>{props.title}</Text>
     </View>
   );
@@ -22,11 +23,9 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     overflow: 'hidden',
     justifyContent: 'space-between',
+    alignItems: 'center'
   },
-  image: {
-    width: 80,
-    height: 80,
-    borderRadius: 5,
+  icon: {
     marginLeft: 15,
     alignSelf: 'center',
   },
