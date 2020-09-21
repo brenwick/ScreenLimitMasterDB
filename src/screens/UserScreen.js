@@ -34,6 +34,12 @@ const UserScreen = () => {
         color={'#09FBD3'}
         iconType={'FontAwesome5'}
       />
+      <UserCategory
+        title={'This is a test -Ignore-'}
+        iconName={'robot'}
+        color={'#09FBD3'}
+        iconType={'FontAwesome5'}
+      />
     </ScrollView>
   );
 };
