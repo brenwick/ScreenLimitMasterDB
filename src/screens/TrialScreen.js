@@ -20,15 +20,15 @@ const TrialScreen = () => {
                 <View style={styles.durationContainer}>
                     <View style={styles.durationBox}>
                         <Fontisto name='stopwatch' size={48} color={'green'} /> 
-                        <Text style={styles.timeText}>1 Hour</Text>
+                        <Text style={styles.timeText}>6 Hours</Text>
                     </View>
                     <View style={styles.durationBox}>
                         <Fontisto name='stopwatch' size={48} color={'yellow'} /> 
-                        <Text style={styles.timeText}>3 Hours</Text>
+                        <Text style={styles.timeText}>12 Hours</Text>
                     </View>
                     <View style={styles.durationBox}>
                         <Fontisto name='stopwatch' size={48} color={'red'} /> 
-                        <Text style={styles.timeText}>6 Hours</Text>
+                        <Text style={styles.timeText}>24 Hours</Text>
                     </View>
                 </View>
 
