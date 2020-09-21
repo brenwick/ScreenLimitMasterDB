@@ -8,6 +8,14 @@ const MasterScreen = ({ navigation }) => {
   return (
     <ScrollView style={styles.mainContainer}>
 
+      <View style={styles.subContainer}> 
+        <Text style={styles.text}>Landing Screen</Text>
+        <StyleButton
+          text='Landing Screen'
+          onPress={() => navigation.navigate('Landing')} />
+      </View>
+
+
       <View style={styles.subContainer}>
       <Text style={styles.text}>Login & Registration</Text>
       <StyleButton
@@ -18,7 +26,6 @@ const MasterScreen = ({ navigation }) => {
         text='Register Screen'
         onPress={() => navigation.navigate('NUser')}
       />
-      
       <StyleButton
         text='Trial Screen'
         onPress={() => navigation.navigate('Trial')}

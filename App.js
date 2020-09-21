@@ -10,6 +10,7 @@ import UserScreen from './src/screens/UserScreen';
 import HistoryScreen from './src/screens/HistoryScreen';
 import SettingScreen from './src/screens/SettingScreen';
 import AppPrepScreen from './src/screens/AppPrepScreen';
+import LandingScreen from './src/screens/LandingScreen';
 
 const navigator = createStackNavigator(
   {
@@ -22,6 +23,7 @@ const navigator = createStackNavigator(
     History: HistoryScreen,
     Settings: SettingScreen,
     Apps: AppPrepScreen,
+    Landing: LandingScreen
   },
   {
     initialRouteName: 'Master',
