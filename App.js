@@ -11,6 +11,9 @@ import HistoryScreen from './src/screens/HistoryScreen';
 import SettingScreen from './src/screens/SettingScreen';
 import AppPrepScreen from './src/screens/AppPrepScreen';
 import LandingScreen from './src/screens/LandingScreen';
+// --Debug--
+import CreateNewUser from './src/server_debug/CreateNewUser';
+import UsersList from './src/server_debug/UsersList';
 
 const navigator = createStackNavigator(
   {
@@ -23,7 +26,9 @@ const navigator = createStackNavigator(
     History: HistoryScreen,
     Settings: SettingScreen,
     Apps: AppPrepScreen,
-    Landing: LandingScreen
+    Landing: LandingScreen,
+    DebugCreateUser: CreateNewUser,
+    DebugListUsers: UsersList
   },
   {
     initialRouteName: 'Master',

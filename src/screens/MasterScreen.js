@@ -3,6 +3,12 @@ import { View, Text, StyleSheet, ScrollView} from 'react-native';
 import StyleButton from '../components/StyleButton';
 import '../variables/globals';
 
+// DEBUG
+import CreateNewUser from '../server_debug/CreateNewUser';
+
+
+
+
 const MasterScreen = ({ navigation }) => {
 
   return (
@@ -59,6 +65,20 @@ const MasterScreen = ({ navigation }) => {
       <StyleButton
         text='TODO: App Selection Screen'
         onPress={() => navigation.navigate('Apps')}
+      />
+      </View>
+
+
+      <View style={styles.subContainer}>
+      <Text style={styles.text}>Server Debug</Text>
+      <StyleButton
+        text='Create New User'
+        onPress={() => navigation.navigate('DebugCreateUser')}
+      />
+
+<StyleButton
+        text='List All Users'
+        onPress={() => navigation.navigate('DebugListUsers')}
       />
       </View>
 
